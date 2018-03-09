@@ -1,1 +1,1 @@
-web: anotherdayinmylife
+stack exec anotherdayinmylife
