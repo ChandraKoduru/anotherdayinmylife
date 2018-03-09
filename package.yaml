@@ -14,6 +14,9 @@ extra-source-files:
 
 dependencies:
   - base
+  - wai
+  - warp
+  - http-types
 
 library:
   source-dirs: src

@@ -69,6 +69,6 @@ extra-package-dbs: []
 # compiler-check: newer-minor 
 nix:
   pure: true
-  enable: true
+  enable: false
   shell-file: shell.nix
   # packages: [glpk, pcre, zlib]

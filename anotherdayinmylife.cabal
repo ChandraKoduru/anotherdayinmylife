@@ -2,7 +2,7 @@
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: 1b6caa26810b88e5032ea0a05b4657faca284eb50cf26e815248fbdb1a64d6a6
+-- hash: 653609404b73280143f4c1ba40b1f2b746b4368430e8da6712c80ab0c5169016
 
 name:           anotherdayinmylife
 version:        0.1.0.0
@@ -29,6 +29,9 @@ library
   ghc-options: -Wall -Wno-unused-matches -Wincomplete-uni-patterns -Wincomplete-record-updates -Wmissing-import-lists -Wcompat -Wredundant-constraints
   build-depends:
       base
+    , http-types
+    , wai
+    , warp
   default-language: Haskell2010
 
 executable anotherdayinmylife
@@ -42,7 +45,10 @@ executable anotherdayinmylife
   build-depends:
       anotherdayinmylife
     , base
+    , http-types
     , optparse-applicative
+    , wai
+    , warp
   default-language: Haskell2010
 
 test-suite anotherdayinmylife-test
@@ -59,9 +65,12 @@ test-suite anotherdayinmylife-test
     , anotherdayinmylife
     , base
     , hspec
+    , http-types
     , tasty
     , tasty-discover
     , tasty-hspec
     , tasty-hunit
     , tasty-quickcheck
+    , wai
+    , warp
   default-language: Haskell2010
