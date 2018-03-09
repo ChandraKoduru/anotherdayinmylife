@@ -1,8 +1,8 @@
 {-# LANGUAGE OverloadedStrings #-}
 module Main where
 
-import Network.Wai
-import Network.HTTP.Types
+import Network.Wai (Application, responseLBS)
+import Network.HTTP.Types (status200)
 import Network.Wai.Handler.Warp (run)
 
 -- import Args (getArgs)
@@ -18,4 +18,4 @@ app _ respond = do
 main :: IO ()
 main = do
   putStrLn $ "Http Server has started on port 8080"
-  run 8080 app
+  run 80 app
