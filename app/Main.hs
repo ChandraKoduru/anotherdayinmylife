@@ -16,7 +16,7 @@ app _ respond = do
     "Hello, Web!"
 
 port :: Int
-port = 80
+port = 8080
 
 main :: IO ()
 main = do
