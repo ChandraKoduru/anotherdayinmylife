@@ -1,0 +1,67 @@
+-- This file has been generated from package.yaml by hpack version 0.21.2.
+--
+-- see: https://github.com/sol/hpack
+--
+-- hash: 1b6caa26810b88e5032ea0a05b4657faca284eb50cf26e815248fbdb1a64d6a6
+
+name:           anotherdayinmylife
+version:        0.1.0.0
+category:       Learning Haskell
+homepage:       https://github.com/chandrakoduru/anotherdayinmylife#readme
+author:         Chandra Koduru
+maintainer:     chandrakoduru@outlook.com
+copyright:      ThisYear
+license:        BSD3
+license-file:   LICENSE
+build-type:     Simple
+cabal-version:  >= 1.10
+
+extra-source-files:
+    README.md
+
+library
+  exposed-modules:
+      Lib
+  other-modules:
+      Paths_anotherdayinmylife
+  hs-source-dirs:
+      src
+  ghc-options: -Wall -Wno-unused-matches -Wincomplete-uni-patterns -Wincomplete-record-updates -Wmissing-import-lists -Wcompat -Wredundant-constraints
+  build-depends:
+      base
+  default-language: Haskell2010
+
+executable anotherdayinmylife
+  main-is: Main.hs
+  other-modules:
+      Args
+      Paths_anotherdayinmylife
+  hs-source-dirs:
+      app
+  ghc-options: -Wall -Wno-unused-matches -Wincomplete-uni-patterns -Wincomplete-record-updates -Wmissing-import-lists -Wcompat -Wredundant-constraints -main-is Main
+  build-depends:
+      anotherdayinmylife
+    , base
+    , optparse-applicative
+  default-language: Haskell2010
+
+test-suite anotherdayinmylife-test
+  type: exitcode-stdio-1.0
+  main-is: Driver.hs
+  other-modules:
+      Test
+      Paths_anotherdayinmylife
+  hs-source-dirs:
+      test
+  ghc-options: -Wall -Wno-unused-matches -Wincomplete-uni-patterns -Wincomplete-record-updates -Wmissing-import-lists -Wcompat -Wredundant-constraints
+  build-depends:
+      QuickCheck
+    , anotherdayinmylife
+    , base
+    , hspec
+    , tasty
+    , tasty-discover
+    , tasty-hspec
+    , tasty-hunit
+    , tasty-quickcheck
+  default-language: Haskell2010
