@@ -18,4 +18,4 @@ app _ respond = do
 main :: IO ()
 main = do
   putStrLn $ "Http Server has started on port 8080"
-  run 80 app
+  run 8080 app
