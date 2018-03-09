@@ -10,7 +10,8 @@ build-prof:
 	stack build --profile --ghc-options="-rtsopts -fprof-auto" anotherdayinmylife
 
 install:
-	stack install anotherdayinmylife
+	stack build --copy-bins
+	# stack install anotherdayinmylife
 
 bindist:
 	mkdir -p $(TARGET)
