@@ -1,0 +1,28 @@
+# https://docs.haskellstack.org/en/stable/custom_snapshot/
+resolver: lts-10.8
+name: anotherdayinmylife-snapshot
+# Additional packages, follows extra-deps syntax
+# packages:
+#  - unordered-containers-0.2.7.1
+#  - hashable-1.2.4.0
+#  - text-1.2.2.1
+
+# Override flags, can also override flags in the parent snapshot
+# flags:
+#  unordered-containers:
+#   debug: true
+
+# Packages from the parent snapshot to ignore
+# drop-packages:
+#  - wai-extra
+
+# Packages which should be hidden (affects script command's import
+# parser
+# hidden:
+#  wai: true
+#  warp: false
+
+# Set GHC options for specific packages
+# ghc-options:
+#  warp:
+#   - -O2

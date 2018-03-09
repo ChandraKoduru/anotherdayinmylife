@@ -1,0 +1,45 @@
+name:                anotherdayinmylife
+version:             0.1.0.0
+#synopsis:
+#description:
+homepage:            https://github.com/chandrakoduru/anotherdayinmylife#readme
+license:             BSD3
+author:              Chandra Koduru
+maintainer:          chandrakoduru@outlook.com
+copyright:           ThisYear
+category:            Learning Haskell
+ghc-options: -Wall -Wno-unused-matches -Wincomplete-uni-patterns -Wincomplete-record-updates -Wmissing-import-lists -Wcompat -Wredundant-constraints
+extra-source-files:
+- README.md
+
+dependencies:
+  - base
+
+library:
+  source-dirs: src
+  exposed-modules:
+    - Lib
+
+executables:
+  anotherdayinmylife:
+    source-dirs:  app
+    main:         Main.hs
+    dependencies: 
+      - anotherdayinmylife
+      - optparse-applicative
+    ghc-options: -main-is Main
+
+tests:
+    anotherdayinmylife-test:
+      source-dirs: test
+      main: Driver.hs
+      dependencies:
+        - anotherdayinmylife
+        - hspec
+        - QuickCheck
+        - tasty
+        - tasty-hspec
+        - tasty-hunit
+        - tasty-quickcheck
+        - tasty-discover
+    
