@@ -15,7 +15,10 @@ app _ respond = do
     [("Content-Type", "text/plain")]
     "Hello, Web!"
 
+port :: Int
+port = 80
+
 main :: IO ()
 main = do
-  putStrLn $ "Http Server has started on port 8080"
-  run 8080 app
+  putStrLn $ "Http Server has started on port " ++ (show port)
+  run port app
