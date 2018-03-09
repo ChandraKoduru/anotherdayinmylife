@@ -30,6 +30,7 @@ executables:
     dependencies: 
       - anotherdayinmylife
       - optparse-applicative
+      - optparse-generic
     ghc-options: -main-is Main
 
 tests:

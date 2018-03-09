@@ -2,7 +2,7 @@
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: 653609404b73280143f4c1ba40b1f2b746b4368430e8da6712c80ab0c5169016
+-- hash: ba8c93fe03f20ed01353d0ec1e4d47ad1ce96a66ae1e7518865cd0008247fd51
 
 name:           anotherdayinmylife
 version:        0.1.0.0
@@ -47,6 +47,7 @@ executable anotherdayinmylife
     , base
     , http-types
     , optparse-applicative
+    , optparse-generic
     , wai
     , warp
   default-language: Haskell2010
